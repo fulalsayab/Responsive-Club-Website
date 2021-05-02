@@ -15,11 +15,13 @@ body {
 
 header {
   /* background-image: url("images/Monthly-Website-Header-background-768x230.jpg"); */
-  background-color: rgb(37, 59, 112);
+  background-color: rgba(37, 59, 112, 50%);
   opacity: 70%;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 100%;
+  position: fixed;
+  top: 0rem;
 }
 
 .topnav {
@@ -38,7 +40,7 @@ header {
 }
 
 .topnav li:hover {
-  background-color:rgb(86, 124, 176);
+  background-color: rgb(37, 59, 112);
   opacity: 50%;
   border-radius: 50%;
 }
@@ -61,7 +63,97 @@ header img {
 
 /* Body element */
 body {
-    background-image: url("images/body-bacground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/body-bacground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title h1 {
+  text-align: center;
+  color: rgb(26, 38, 77);
+  font-size: 4rem;
+  font-family: "Architects Daughter", cursive;
+  margin-top: 10rem;
+  padding: 2rem;
+  /* background-color: rgba(58, 96, 159, 50%); */
+  border-radius: 5%;
+}
+.title p {
+  text-align: center;
+}
+
+#events h2,
+#place h2,
+#food h2,
+#about h2 {
+  text-align: left;
+  color: rgb(26, 38, 77);
+  font-size: 2.5rem;
+  font-family: "Architects Daughter", cursive;
+  padding: 0;
+  margin-left: 50px;
+}
+
+footer {
+  background-color: rgba(37, 59, 112, 50%);
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: lavender;
+}
+h4 {
+  font-size: 1.45rem;
+  font-weight: normal;
+  padding: 0.75rem;
+  text-decoration-line: underline;
+}
+
+footer li {
+  display: inline-block;
+  color: lavender;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+body img {
+  width: 20%;
+  height: 30;
+  margin: 1.5%;
+  top: 50%;
+  left: 50%;
+}
+
+figure {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.food img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 320px) {
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
